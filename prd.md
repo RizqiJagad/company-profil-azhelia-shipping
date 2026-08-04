@@ -211,6 +211,7 @@
 | **Icons** | Lucide React |
 | **Form Handling** | React Hook Form + Zod Schema Validation |
 | **State Management**| Zustand |
+| **Testing** | Vitest + React Testing Library |
 | **SEO** | Next SEO + Schema.org (JSON-LD) |
 | **Media Handling** | Next/Image dengan WebP/AVIF Optimization |
 | **Deployment** | Vercel Platform |
@@ -301,3 +302,6 @@ module.exports = {
 2. **Cross-Browser Compatibility:** Berjalan tanpa hambatan pada Chrome, Edge, Safari, dan Firefox modern.
 3. **Responsive Execution:** Tampilan adaptif penuh dari resolusi mobile (360px) hingga layar Ultra-wide.
 4. **Form Validation:** Validasi komprehensif pada form Karir, Kontak, dan Download PDF menggunakan Zod schema.
+5. **Automated Unit & Component Testing:** Pengujian unit dan komponen menggunakan **Vitest** dan React Testing Library.
+6. **Git Branching Strategy:** Seluruh pekerjaan pengembangan dicommit dan dipush ke branch **`development`** terlebih dahulu sebelum diproduksi ke branch **`main`**.
+
