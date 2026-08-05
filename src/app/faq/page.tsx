@@ -1,97 +1,64 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ChevronDown, HelpCircle, Ship, Users } from 'lucide-react';
+import { ChevronDown, HelpCircle, MessageCircle } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
+import { Button } from '@/components/ui/Button';
 import { faqData } from '@/data/maritimeData';
 
 export default function FAQPage() {
-  const [activeTab, setActiveTab] = useState<'shipowners' | 'seafarers'>('shipowners');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const currentFaqs = faqData[activeTab];
-
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-24 pb-20 bg-[#FAF6EC]">
       {/* Header */}
-      <section className="bg-gradient-to-r from-[#0A2540] to-[#1E3A8A] text-white py-16 mb-16">
+      <section className="bg-[#071429] text-white py-16 mb-16 border-b border-[#E1B341]/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl sm:text-5xl font-extrabold mb-4"
+            className="text-4xl sm:text-5xl font-black mb-4 text-[#E1B341]"
           >
-            Frequently Asked Questions
+            FREQUENTLY ASKED QUESTIONS
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-lg sm:text-xl text-blue-100 font-light"
+            className="text-lg sm:text-xl text-gray-200 font-light"
           >
-            Clear answers for international shipowners, charterers, and seafarers.
+            Answers to common questions regarding recruitment, requirements, documents, and application status.
           </motion.p>
         </div>
       </section>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        {/* Category Tabs */}
-        <div className="flex bg-gray-100 p-1.5 rounded-2xl mb-10 max-w-md mx-auto shadow-inner">
-          <button
-            onClick={() => {
-              setActiveTab('shipowners');
-              setOpenIndex(0);
-            }}
-            className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-              activeTab === 'shipowners'
-                ? 'bg-[#0A2540] text-white shadow-md'
-                : 'text-gray-600 hover:text-[#0A2540]'
-            }`}
-          >
-            <Ship className="w-4 h-4" />
-            For Shipowners
-          </button>
-          <button
-            onClick={() => {
-              setActiveTab('seafarers');
-              setOpenIndex(0);
-            }}
-            className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-              activeTab === 'seafarers'
-                ? 'bg-[#0A2540] text-white shadow-md'
-                : 'text-gray-600 hover:text-[#0A2540]'
-            }`}
-          >
-            <Users className="w-4 h-4" />
-            For Seafarers
-          </button>
-        </div>
-
         {/* Accordions */}
         <div className="space-y-4">
-          {currentFaqs.map((faq, index) => {
+          {faqData.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <motion.div key={index} layout>
                 <Card
-                  className={`p-6 border transition-all cursor-pointer ${
-                    isOpen ? 'border-blue-500 shadow-md' : 'border-gray-200 hover:border-gray-300'
+                  className={`p-6 border transition-all cursor-pointer bg-white ${
+                    isOpen ? 'border-[#E1B341] shadow-md' : 'border-gray-200 hover:border-[#E1B341]/50'
                   }`}
                   onClick={() => toggleAccordion(index)}
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <h3 className="text-lg font-bold text-[#0A2540] flex items-start gap-3">
-                      <HelpCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <h3 className="text-lg font-bold text-[#071429] flex items-start gap-3">
+                      <HelpCircle className="w-5 h-5 text-[#E1B341] flex-shrink-0 mt-0.5" />
                       <span>{faq.question}</span>
                     </h3>
                     <div
-                      className={`p-1.5 rounded-full bg-blue-50 text-blue-700 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180 bg-blue-600 text-white' : ''
+                      className={`p-1.5 rounded-full bg-[#FAF6EC] text-[#071429] border border-[#E1B341]/30 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180 bg-[#E1B341] text-[#071429]' : ''
                       }`}
                     >
                       <ChevronDown className="w-5 h-5" />
@@ -103,7 +70,7 @@ export default function FAQPage() {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="mt-4 pt-4 border-t border-gray-100 text-gray-600 text-sm leading-relaxed pl-8"
+                      className="mt-4 pt-4 border-t border-gray-100 text-gray-700 text-sm leading-relaxed pl-8"
                     >
                       {faq.answer}
                     </motion.div>
@@ -112,6 +79,22 @@ export default function FAQPage() {
               </motion.div>
             );
           })}
+        </div>
+
+        {/* Call to Action Box */}
+        <div className="mt-16 bg-white p-8 rounded-3xl border border-[#E1B341]/40 shadow-lg text-center">
+          <h3 className="text-2xl font-black text-[#071429] mb-2 uppercase">
+            Have More Questions?
+          </h3>
+          <p className="text-gray-600 text-sm mb-6 max-w-md mx-auto">
+            Contact our Crewing Team via WhatsApp directly for any additional questions or assistance with your application.
+          </p>
+          <a href="https://wa.me/6281295904116" target="_blank" rel="noreferrer">
+            <Button variant="primary" size="lg" className="bg-[#E1B341] text-[#071429] hover:bg-[#F4C854]">
+              <MessageCircle className="w-5 h-5 mr-2 text-[#071429]" />
+              Contact Crewing Team via WhatsApp
+            </Button>
+          </a>
         </div>
       </div>
     </div>

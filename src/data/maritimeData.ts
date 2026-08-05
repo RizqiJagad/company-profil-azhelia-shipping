@@ -76,75 +76,124 @@ export const statisticsData = [
 
 export const whyChooseUsData = [
   {
-    title: 'Certified & STCW Compliant',
-    desc: 'All seafarers undergo strict verification adhering strictly to MLC 2006 and STCW standards.',
+    title: 'Qualified & Certified Seafarers',
+    desc: 'Providing competent, certified, and experienced seafarers for global vessels.',
     iconName: 'ShieldCheck',
   },
   {
-    title: 'Global Crewing Network',
-    desc: 'Extensive database of experienced officers and ratings ready for immediate global deployment.',
+    title: 'Transparent Recruitment Process',
+    desc: 'Ensuring clear, ethical, and open recruitment procedures for clients and candidates.',
+    iconName: 'Search',
+  },
+  {
+    title: 'Professional Recruitment Standards',
+    desc: 'Adhering to strict international maritime industry standards and safety regulations.',
+    iconName: 'Award',
+  },
+  {
+    title: 'International Maritime Network',
+    desc: 'Connecting shipowners and seafarers with global crewing opportunities worldwide.',
     iconName: 'Globe',
   },
   {
-    title: '24/7 Operations Support',
-    desc: 'Round-the-clock emergency support and crew mobilization for international shipowners.',
+    title: 'Fast Response & Reliable Service',
+    desc: 'Delivering swift, dependable crewing solutions and 24/7 operational support.',
     iconName: 'Clock',
   },
   {
-    title: 'End-to-End Management',
-    desc: 'Comprehensive services covering recruitment, visa processing, travel logistics, and payroll.',
+    title: 'Customer-Oriented Solutions',
+    desc: 'Tailoring recruitment and crew management services to specific client operational needs.',
+    iconName: 'Users',
+  },
+  {
+    title: 'Long-Term Partnership Commitment',
+    desc: 'Building lasting relationships with shipowners based on trust and mutual success.',
     iconName: 'Compass',
   },
 ];
 
+export const companyValuesData = [
+  {
+    title: 'Integrity & Trust',
+    desc: 'Upholding honesty and transparency in every recruitment process while building lasting trust and strong relationships with clients and seafarers.',
+    iconName: 'ShieldCheck',
+  },
+  {
+    title: 'Excellence in Service',
+    desc: 'Continuously improving service quality through innovation, efficiency, and a dedication to exceeding client and seafarer expectations.',
+    iconName: 'Award',
+  },
+  {
+    title: 'Responsibility',
+    desc: 'Prioritizing safety, regulatory compliance, customer satisfaction, and accountability in every aspect of our operations.',
+    iconName: 'Shield',
+  },
+  {
+    title: 'Professionalism',
+    desc: 'Delivering recruitment and crewing services in accordance with international maritime standards, with a commitment to quality and operational excellence.',
+    iconName: 'CheckCircle2',
+  },
+];
+
+export const companyCommitment =
+  'At AZHELIA SHIPPING, we are committed to delivering exceptional maritime recruitment services through professionalism, integrity, and dedication. Our goal is to become a reliable bridge between international shipowners and qualified seafarers by providing efficient, ethical, and high-quality recruitment solutions. We believe that trust is earned through consistent performance, and we are dedicated to maintaining long-term partnerships built on reliability, transparency, and mutual success.';
+
 export const servicesData: ServiceItem[] = [
   {
     id: 'crew-recruitment',
-    title: 'Crew Recruitment & Selection',
-    description: 'Strategic sourcing and evaluation of qualified officers and ratings tailored to specific vessel requirements.',
-    features: ['Rigorous technical screening', 'Comprehensive background check', 'English proficiency assessment'],
-    details: 'Our crew recruitment process combines deep maritime expertise with rigorous competency evaluations. We verify all STCW certificates, sea time logbooks, and medical fitness records to match top-tier seafarers with prestigious shipowners.',
+    title: 'Crew Recruitment',
+    description: 'Recruiting experienced officers and ratings for various types of international vessels.',
+    features: ['Experienced officers & ratings', 'Strict competency evaluations', 'Full STCW certification check'],
+    details: 'Our crew recruitment process matches skilled Deck and Engine officers as well as ratings with international shipowners through transparent and professional selection.',
     iconName: 'UserPlus',
   },
   {
     id: 'crew-management',
-    title: 'Full Crew Management',
-    description: 'Complete operational management of crew rotations, welfare, performance monitoring, and contract admin.',
-    features: ['Contract administration', 'Performance evaluations', 'Rotational scheduling'],
-    details: 'We handle complete crew complement management for bulk carriers, tankers, and container ships. From contract execution to relief planning and crew welfare, we guarantee smooth vessel operation.',
+    title: 'Crew Management',
+    description: 'Supporting shipowners in managing crew administration and deployment.',
+    features: ['Rotational scheduling', 'Contract administration', 'Crew welfare support'],
+    details: 'We support shipowners in complete crewing operations, ensuring smooth rotational planning, administration, and continuous crew welfare.',
     iconName: 'Users',
   },
   {
-    id: 'document-compliance',
-    title: 'Document & Flag State Verification',
-    description: 'End-to-end processing of flag state endorsements, visa logistics, and regulatory compliance.',
-    features: ['Panama, Marshall Islands, Liberia endorsements', 'C1/D & Schengen visa assistance', 'MLC 2006 compliance auditing'],
-    details: 'Navigating maritime regulations can be complex. AZHELIA SHIPPING ensures full compliance with international flag state administrations and international maritime law.',
+    id: 'crew-documentation',
+    title: 'Crew Documentation',
+    description: 'Assisting seafarers with document preparation and employment requirements.',
+    features: ['Seaman book & passport verification', 'Flag state endorsements', 'STCW certificate auditing'],
+    details: 'We assist seafarers and shipowners with complete document audits, visa arrangements, and flag state endorsement filings.',
     iconName: 'FileCheck',
   },
   {
-    id: 'maritime-training',
-    title: 'Maritime Training & Upgrading',
-    description: 'Pre-deployment briefing, safety refresher courses, and specialized technical skill enhancements.',
-    features: ['Bridge Resource Management (BRM)', 'Engine Room Resource Management (ERM)', 'Safety & Survival refresher'],
-    details: 'We prepare crew members thoroughly before mobilization through customized safety briefings, environmental policy orientation, and company-specific SMS procedures.',
+    id: 'crew-placement',
+    title: 'Crew Placement',
+    description: "Providing qualified crew members according to shipowners' operational requirements.",
+    features: ['Tailored vessel staffing', 'On-demand crew relief', 'Qualified rating complement'],
+    details: 'We place certified seafarers matching specific vessel types including bulk carriers, tankers, container ships, and general cargo vessels.',
+    iconName: 'Ship',
+  },
+  {
+    id: 'crew-mobilization',
+    title: 'Crew Mobilization',
+    description: 'Coordinating travel arrangements, visas, and embarkation procedures.',
+    features: ['Marine flight ticketing', 'Embarkation visa processing', 'Port agency coordination'],
+    details: 'Our mobilization team coordinates seamless international travel, transit visas, and port sign-on procedures for seafarers worldwide.',
+    iconName: 'Plane',
+  },
+  {
+    id: 'maritime-consultancy',
+    title: 'Maritime Consultancy',
+    description: 'Providing recruitment consultation and workforce solutions for international shipping companies.',
+    features: ['Workforce planning', 'Crewing cost optimization', 'Regulatory compliance advice'],
+    details: 'We offer strategic crewing consultancy and tailored workforce solutions to optimize crewing efficiency and regulatory compliance.',
     iconName: 'GraduationCap',
   },
   {
-    id: 'payroll-services',
-    title: 'Crew Payroll & Allotment Management',
-    description: 'Secure multi-currency payroll processing, family allotment transfers, and transparent financial reporting.',
-    features: ['Direct multi-bank transfers', 'Tax & insurance compliance', 'On-time monthly allotments'],
-    details: 'Our automated payroll system guarantees timely monthly salary payments and family allotment transfers, keeping crew morale high and compliant with MLC guidelines.',
-    iconName: 'CreditCard',
-  },
-  {
-    id: 'travel-logistics',
-    title: 'Crew Travel & Mobilization',
-    description: 'Seamless international travel booking, airport transfers, port agency coordination, and emergency logistics.',
-    features: ['Marine fare ticket booking', 'Port agent coordination', '24/7 travel emergency desk'],
-    details: 'We partner with leading marine travel agencies to secure flexible seaman fares and ensure frictionless crew sign-on and sign-off at ports worldwide.',
-    iconName: 'Plane',
+    id: 'marine-fuel-supply',
+    title: 'Marine Fuel Supply',
+    description: 'Reliable marine fuel supply services across Indonesian waters.',
+    features: ['Marine Fuel Oil (MFO)', 'Low Sulfur MGO (LSMGO)', 'High Speed Diesel (HSD)'],
+    details: 'In addition to our shipping agency services, we provide marine fuel supply through our trusted partners. Vessels operating or calling at ports throughout Indonesia can conveniently arrange bunkering with us.',
+    iconName: 'Droplet',
   },
 ];
 
@@ -152,42 +201,42 @@ export const vesselTypesData: VesselItem[] = [
   {
     id: 'bulk-carrier',
     name: 'Bulk Carrier',
-    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80',
+    image: '/gambar_1.jpg',
     specs: 'Handysize to Capesize (40,000 - 180,000 DWT)',
     description: 'We supply skilled Deck and Engine crew with extensive experience operating modern gearless and geared bulk carriers carrying dry bulk cargoes.',
   },
   {
     id: 'tanker',
     name: 'Oil & Chemical Tanker',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80',
+    image: '/gambar_2.jpg',
     specs: 'Product, Crude & Chemical (10,000 - 320,000 DWT)',
     description: 'Specialized tanker crews holding Advanced Oil/Chemical Tanker endorsements, well-trained in SIRE vetting standards and cargo handling safety.',
   },
   {
     id: 'container',
     name: 'Container Vessel',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80',
+    image: '/gambar_3.jpg',
     specs: 'Feeder to Ultra Large Container Vessel (1,000 - 24,000 TEU)',
     description: 'Fast-paced container operations require agile seafarers proficient in reefer monitoring, lashing inspection, and tight port turnaround schedules.',
   },
   {
     id: 'mpp',
     name: 'Multi-Purpose Cargo (MPP)',
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
+    image: '/gambar_4.jpg',
     specs: 'Heavy Lift & Project Cargo (5,000 - 30,000 DWT)',
     description: 'Deck officers skilled in heavy-lift cargo stowage, securing calculation, and crane operations.',
   },
   {
     id: 'lpg',
     name: 'LPG / Gas Carrier',
-    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80',
+    image: '/gambar_5.jpg',
     specs: 'Pressurized & Fully Refrigerated (5,000 - 84,000 CBM)',
     description: 'Gas tanker specialists experienced in cryogenic liquid handling, inert gas systems, and strict SIGTTO safety guidelines.',
   },
   {
     id: 'general-cargo',
     name: 'General Cargo Vessel',
-    image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80',
+    image: '/gambar_6.jpg',
     specs: 'Versatile Fleet (3,000 - 25,000 DWT)',
     description: 'Adaptable seafarers capable of managing diverse breakbulk, timber, and steel coil shipments safely.',
   },
@@ -313,7 +362,7 @@ export const galleryData: GalleryItem[] = [
     title: 'Crew Mobilization at Port of Tanjung Priok',
     category: 'Operations',
     description: 'Pre-deployment briefing and safety gear inspection before sign-on.',
-    src: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80',
+    src: '/gambar_1.jpg',
     alt: 'Crew mobilization Tanjung Priok',
   },
   {
@@ -321,7 +370,7 @@ export const galleryData: GalleryItem[] = [
     title: 'Bulk Carrier Cargo Operation',
     category: 'Vessels',
     description: 'Safe loading inspection managed by our qualified Deck Officers.',
-    src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80',
+    src: '/gambar_2.jpg',
     alt: 'Bulk Carrier cargo operation',
   },
   {
@@ -329,7 +378,7 @@ export const galleryData: GalleryItem[] = [
     title: 'Engine Room Maintenance Simulation',
     category: 'Training',
     description: 'Engineers undergoing simulator training for electronic main engines.',
-    src: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+    src: '/gambar_3.jpg',
     alt: 'Engine room simulator training',
   },
   {
@@ -337,7 +386,7 @@ export const galleryData: GalleryItem[] = [
     title: 'Container Ship Navigation Deck',
     category: 'Vessels',
     description: 'Advanced bridge navigation equipment operated by certified watchkeeping officers.',
-    src: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80',
+    src: '/gambar_4.jpg',
     alt: 'Container vessel navigation deck',
   },
   {
@@ -345,7 +394,7 @@ export const galleryData: GalleryItem[] = [
     title: 'Safety & Survival Training Session',
     category: 'Training',
     description: 'STCW refresher course on life-saving appliances and firefighting.',
-    src: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80',
+    src: '/gambar_5.jpg',
     alt: 'Safety training session',
   },
   {
@@ -353,8 +402,48 @@ export const galleryData: GalleryItem[] = [
     title: 'Annual Principal & Crew Meet',
     category: 'Events',
     description: 'Building strong relationships between shipowners and top-performing seafarers.',
-    src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80',
+    src: '/gambar_6.jpg',
     alt: 'Annual crew gather event',
+  },
+  {
+    id: 'gal-7',
+    title: 'Maritime Safety Briefing',
+    category: 'Operations',
+    description: 'Comprehensive briefing on international maritime safety standards.',
+    src: '/gambar_7.jpg',
+    alt: 'Maritime Safety Briefing',
+  },
+  {
+    id: 'gal-8',
+    title: 'Vessel Inspection at Anchorage',
+    category: 'Vessels',
+    description: 'Routine vessel audit and crew welfare check conducted by management.',
+    src: '/gambar_8.jpg',
+    alt: 'Vessel Inspection',
+  },
+  {
+    id: 'gal-9',
+    title: 'Bridge Simulator Refresher',
+    category: 'Training',
+    description: 'Advanced navigation and collision avoidance training.',
+    src: '/gambar_9.jpg',
+    alt: 'Bridge Simulator Refresher',
+  },
+  {
+    id: 'gal-10',
+    title: 'Officer Briefing Session',
+    category: 'Events',
+    description: 'Interactive session with senior officers prior to contract sign-on.',
+    src: '/gambar_10.jpg',
+    alt: 'Officer Briefing Session',
+  },
+  {
+    id: 'gal-11',
+    title: 'Port Mobilization Logistics',
+    category: 'Operations',
+    description: 'Seamless seafarer transport and document verification at harbor.',
+    src: '/gambar_11.jpg',
+    alt: 'Port Mobilization Logistics',
   },
 ];
 
@@ -363,7 +452,7 @@ export const teamMembersData: TeamMember[] = [
     id: 'team-1',
     name: 'Capt. Hendra Wijaya',
     title: 'Managing Director & CEO',
-    photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
+    photo: '/gambar_7.jpg',
     bio: 'Over 20 years of maritime industry experience, including 10 years as Master Mariner on international oil tankers.',
     linkedin: 'https://linkedin.com',
     email: 'hendra@azheliashipping.com',
@@ -372,7 +461,7 @@ export const teamMembersData: TeamMember[] = [
     id: 'team-2',
     name: 'Budi Santoso, M.Mar.E',
     title: 'Director of Crewing Operations',
-    photo: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80',
+    photo: '/gambar_9.jpg',
     bio: 'Former Chief Engineer with extensive experience managing international crew recruitment and flag state compliance.',
     linkedin: 'https://linkedin.com',
     email: 'budi@azheliashipping.com',
@@ -381,7 +470,7 @@ export const teamMembersData: TeamMember[] = [
     id: 'team-3',
     name: 'Siti Rahmawati',
     title: 'Head of Quality & Compliance',
-    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+    photo: '/gambar_10.jpg',
     bio: 'Expert in MLC 2006 regulations, STCW 2010 auditing, and ISO 9001 quality management systems.',
     linkedin: 'https://linkedin.com',
     email: 'siti@azheliashipping.com',
@@ -412,41 +501,35 @@ export const testimonialsData: TestimonialItem[] = [
   },
 ];
 
-export const faqData = {
-  shipowners: [
-    {
-      question: 'What types of vessels do you provide crew for?',
-      answer: 'We provide fully qualified crew for Bulk Carriers, Oil/Chemical Tankers, Container Ships, Multi-Purpose Vessels (MPP), LPG Carriers, and General Cargo ships.',
-    },
-    {
-      question: 'How do you ensure crew qualifications and STCW compliance?',
-      answer: 'Every candidate undergoes document verification through official maritime authority portals, technical interviews by senior officers, medical fitness exams, and English proficiency testing.',
-    },
-    {
-      question: 'Can you handle emergency crew replacements at short notice?',
-      answer: 'Yes, our 24/7 crewing operations team maintains a pool of pre-screened, standby seafarers with valid visas ready for fast global mobilization.',
-    },
-    {
-      question: 'Are your crewing services MLC 2006 certified?',
-      answer: 'Yes, AZHELIA SHIPPING operates in full compliance with the Maritime Labour Convention (MLC 2006) and holds ISO 9001 quality certification.',
-    },
-  ],
-  seafarers: [
-    {
-      question: 'How can I apply for open seafarer positions?',
-      answer: 'You can search available jobs on our Careers page and submit your application online via our multi-step form, or visit our Jakarta office with your original certificates.',
-    },
-    {
-      question: 'Do you charge any placement fees to seafarers?',
-      answer: 'No! AZHELIA SHIPPING adheres strictly to MLC 2006. We NEVER charge seafarers any recruitment, placement, or processing fees.',
-    },
-    {
-      question: 'What documents are required when applying?',
-      answer: 'You need a valid Passport, Seaman Book, STCW Basic Safety Training, COP/COC certificates according to your rank, and recent sea service references.',
-    },
-    {
-      question: 'How long does the recruitment and deployment process take?',
-      answer: 'Depending on vessel relief schedules and visa requirements, deployment typically takes between 1 to 3 weeks following successful interview and medical clearance.',
-    },
-  ],
-};
+export const faqData = [
+  {
+    question: 'How can I apply for a job?',
+    answer:
+      'You can apply online through our Careers page by submitting your application form, or directly contact our Crewing Team via WhatsApp through our contact desk. Our team will review your qualifications for active vessel vacancies.',
+  },
+  {
+    question: 'What are the minimum requirements?',
+    answer:
+      'Minimum requirements include: minimum 2 years of experience on foreign-going vessels, valid Passport and Seaman Book, valid STCW Certificates, valid Medical Certificate, valid COC/COP (if applicable) with at least 12 months validity remaining, fluency in English, good knowledge of onboard operations, and being physically and mentally fit for sea service.',
+  },
+  {
+    question: 'What documents are required?',
+    answer:
+      'Required documents include your Updated CV, Passport, Seaman Book, STCW Certificates, Medical Certificate, COC/COP (if applicable), Sea Service Record, and a recent Passport-size Photo.',
+  },
+  {
+    question: 'Is there any recruitment fee?',
+    answer:
+      'No. PT AZHELIA SHIPPING AGENCY INTERNATIONAL strictly adheres to MLC 2006 regulations. We NEVER charge any recruitment fees, placement fees, or processing charges to seafarers.',
+  },
+  {
+    question: 'How long does the recruitment process take?',
+    answer:
+      'The timeline depends on vessel relief schedules, client interview approvals, and document verification. Profile review and document verification usually take between 3 to 7 working days upon receipt of complete documents.',
+  },
+  {
+    question: 'How will I know the status of my application?',
+    answer:
+      'Our Crewing Team will review your profile and contact you directly via WhatsApp or email when a suitable vacancy matching your qualifications becomes available. You can also contact our Crewing Team anytime via WhatsApp for real-time application updates.',
+  },
+];

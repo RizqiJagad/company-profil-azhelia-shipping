@@ -1,23 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --primary-navy: #0A2540;
-  --primary-blue: #1E3A8A;
-  --primary-light: #3B82F6;
+  --primary-navy: #071429;
+  --primary-gold: #E1B341;
+  --gold-light: #F4C854;
+  --gold-dark: #C5982B;
+  --warm-cream: #FAF6EC;
   --white: #FFFFFF;
-  --off-white: #F8FAFC;
   --gray-50: #F9FAFB;
   --gray-100: #F3F4F6;
   --gray-200: #E5E7EB;
   --gray-300: #D1D5DB;
-  --gray-900: #111827;
+  --gray-900: #071429;
 
   --success: #10B981;
   --warning: #F59E0B;
   --error: #EF4444;
 
-  --background: #FFFFFF;
-  --foreground: #111827;
+  --background: #FAF6EC;
+  --foreground: #071429;
 }
 
 body {
@@ -27,29 +28,37 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom Utilities */
+/* Custom Utilities for SAMPLE 3 Theme */
 .bg-navy {
-  background-color: #0A2540;
+  background-color: #071429;
 }
 
 .text-navy {
-  color: #0A2540;
+  color: #071429;
 }
 
-.bg-maritime-blue {
-  background-color: #1E3A8A;
+.bg-gold {
+  background-color: #E1B341;
 }
 
-.text-maritime-blue {
-  color: #1E3A8A;
+.text-gold {
+  color: #E1B341;
 }
 
-.gradient-primary {
-  background: linear-gradient(135deg, #0A2540 0%, #1E3A8A 100%);
+.border-gold {
+  border-color: #E1B341;
 }
 
-.gradient-blue {
-  background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+.bg-warm-cream {
+  background-color: #FAF6EC;
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #E1B341 0%, #F4C854 100%);
+}
+
+.gradient-navy {
+  background: linear-gradient(135deg, #071429 0%, #0D2244 100%);
 }
 
 /* Smooth scroll */

@@ -2,27 +2,27 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Ship, Anchor, CheckCircle } from 'lucide-react';
+import { Anchor, CheckCircle } from 'lucide-react';
 import { vesselTypesData } from '@/data/maritimeData';
 
 export default function VesselTypesPage() {
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-24 pb-20 bg-[#FAF6EC]">
       {/* Header */}
-      <section className="bg-gradient-to-r from-[#0A2540] to-[#1E3A8A] text-white py-16 mb-16">
+      <section className="bg-[#071429] text-white py-16 mb-16 border-b border-[#E1B341]/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl sm:text-5xl font-extrabold mb-4"
+            className="text-4xl sm:text-5xl font-black mb-4 text-[#E1B341]"
           >
-            Vessel Types Covered
+            VESSEL TYPES COVERED
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-lg sm:text-xl text-blue-100 font-light"
+            className="text-lg sm:text-xl text-gray-200 font-light"
           >
             Providing highly specialized, STCW-certified crews across various international commercial vessel types.
           </motion.p>
@@ -39,7 +39,7 @@ export default function VesselTypesPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -8 }}
-              className="relative group overflow-hidden rounded-2xl shadow-lg border border-gray-100 bg-white flex flex-col justify-between"
+              className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E1B341]/30 bg-white flex flex-col justify-between"
             >
               {/* Vessel Image */}
               <div className="relative h-56 overflow-hidden">
@@ -48,14 +48,14 @@ export default function VesselTypesPage() {
                   alt={vessel.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540] via-[#0A2540]/40 to-transparent" />
-                <span className="absolute top-4 right-4 bg-[#1E3A8A]/90 text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-xs shadow">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071429] via-[#071429]/40 to-transparent" />
+                <span className="absolute top-4 right-4 bg-[#E1B341] text-[#071429] text-xs font-black px-3 py-1 rounded-full shadow tracking-wider uppercase">
                   Certified Crew
                 </span>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <h3 className="text-2xl font-bold mb-1">{vessel.name}</h3>
-                  <p className="text-xs text-blue-200 font-medium flex items-center gap-1">
-                    <Anchor className="w-3.5 h-3.5 text-blue-300" />
+                  <h3 className="text-2xl font-bold mb-1 text-white">{vessel.name}</h3>
+                  <p className="text-xs text-[#E1B341] font-medium flex items-center gap-1">
+                    <Anchor className="w-3.5 h-3.5 text-[#E1B341]" />
                     {vessel.specs}
                   </p>
                 </div>
@@ -66,8 +66,8 @@ export default function VesselTypesPage() {
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {vessel.description}
                 </p>
-                <div className="flex items-center gap-2 text-xs font-semibold text-[#1E3A8A] bg-blue-50 p-2.5 rounded-xl">
-                  <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                <div className="flex items-center gap-2 text-xs font-semibold text-[#071429] bg-[#FAF6EC] p-2.5 rounded-xl border border-[#E1B341]/30">
+                  <CheckCircle className="w-4 h-4 text-[#E1B341] flex-shrink-0" />
                   <span>Full Officer & Rating Complement</span>
                 </div>
               </div>

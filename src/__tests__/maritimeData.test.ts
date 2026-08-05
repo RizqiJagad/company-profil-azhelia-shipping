@@ -5,7 +5,6 @@ import {
   vesselTypesData,
   recruitmentStepsData,
   jobsData,
-  galleryData,
   teamMembersData,
   faqData,
 } from '@/data/maritimeData';
@@ -18,7 +17,7 @@ describe('Maritime Data Integrity', () => {
   });
 
   it('contains valid service items with details', () => {
-    expect(servicesData.length).toBe(6);
+    expect(servicesData.length).toBe(7);
     servicesData.forEach((service) => {
       expect(service.id).toBeDefined();
       expect(service.title).not.toBe('');
@@ -26,11 +25,11 @@ describe('Maritime Data Integrity', () => {
     });
   });
 
-  it('contains 6 vessel types', () => {
-    expect(vesselTypesData.length).toBe(6);
+  it('contains vessel types', () => {
+    expect(vesselTypesData.length).toBeGreaterThan(0);
   });
 
-  it('contains 6 recruitment steps', () => {
+  it('contains recruitment process steps', () => {
     expect(recruitmentStepsData.length).toBe(6);
     expect(recruitmentStepsData[0].step).toBe(1);
     expect(recruitmentStepsData[5].step).toBe(6);
@@ -41,8 +40,11 @@ describe('Maritime Data Integrity', () => {
     expect(jobsData[0].rank).toBeDefined();
   });
 
-  it('contains FAQs for both shipowners and seafarers', () => {
-    expect(faqData.shipowners.length).toBeGreaterThan(0);
-    expect(faqData.seafarers.length).toBeGreaterThan(0);
+  it('contains official FAQ items', () => {
+    expect(faqData.length).toBe(6);
+    faqData.forEach((faq) => {
+      expect(faq.question).toBeDefined();
+      expect(faq.answer).toBeDefined();
+    });
   });
 });

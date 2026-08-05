@@ -17,22 +17,22 @@ export default function GalleryPage() {
   );
 
   return (
-    <div className="pt-24 pb-20">
+    <div className="pt-24 pb-20 bg-[#FAF6EC]">
       {/* Header */}
-      <section className="bg-gradient-to-r from-[#0A2540] to-[#1E3A8A] text-white py-16 mb-16">
+      <section className="bg-[#071429] text-white py-16 mb-16 border-b border-[#E1B341]/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl sm:text-5xl font-extrabold mb-4"
+            className="text-4xl sm:text-5xl font-black mb-4 text-[#E1B341]"
           >
-            Visual Journey & Operations
+            VISUAL JOURNEY & OPERATIONS
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-lg sm:text-xl text-blue-100 font-light"
+            className="text-lg sm:text-xl text-gray-200 font-light"
           >
             A glimpse into our crewing operations, fleet management, simulator training sessions, and annual maritime events.
           </motion.p>
@@ -46,10 +46,10 @@ export default function GalleryPage() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
+              className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                 activeCategory === cat
-                  ? 'bg-[#1E3A8A] text-white shadow-md'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  ? 'bg-[#E1B341] text-[#071429] shadow-md font-black border border-[#071429]'
+                  : 'bg-white text-gray-700 hover:bg-[#E1B341]/20 border border-gray-200'
               }`}
             >
               {cat}
@@ -67,7 +67,7 @@ export default function GalleryPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
               onClick={() => setSelectedImage(item)}
-              className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer bg-white border border-gray-100"
+              className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer bg-white border border-[#E1B341]/30 hover:border-[#E1B341]"
             >
               <div className="h-64 overflow-hidden relative">
                 <img
@@ -75,15 +75,15 @@ export default function GalleryPage() {
                   alt={item.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A2540]/90 via-[#0A2540]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071429]/95 via-[#071429]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div className="text-white">
-                    <span className="text-xs font-bold bg-blue-500 px-2.5 py-0.5 rounded-full mb-2 inline-block">
+                    <span className="text-xs font-black bg-[#E1B341] text-[#071429] px-2.5 py-0.5 rounded-full mb-2 inline-block uppercase tracking-wider">
                       {item.category}
                     </span>
-                    <h4 className="font-bold text-lg leading-snug">{item.title}</h4>
-                    <p className="text-xs text-blue-200 mt-1 line-clamp-2">{item.description}</p>
+                    <h4 className="font-bold text-lg leading-snug text-white">{item.title}</h4>
+                    <p className="text-xs text-gray-300 mt-1 line-clamp-2">{item.description}</p>
                   </div>
-                  <div className="absolute top-4 right-4 p-2 bg-white/20 rounded-full text-white backdrop-blur-xs">
+                  <div className="absolute top-4 right-4 p-2 bg-[#E1B341] rounded-full text-[#071429] shadow">
                     <ZoomIn className="w-5 h-5" />
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function GalleryPage() {
           maxWidth="3xl"
         >
           <div className="space-y-4">
-            <div className="rounded-2xl overflow-hidden shadow-xl max-h-[65vh]">
+            <div className="rounded-2xl overflow-hidden shadow-xl max-h-[65vh] border border-[#E1B341]/30">
               <img
                 src={selectedImage.src}
                 alt={selectedImage.alt}
@@ -110,7 +110,7 @@ export default function GalleryPage() {
               />
             </div>
             <div className="flex items-center justify-between text-sm">
-              <span className="font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+              <span className="font-bold text-[#071429] bg-[#E1B341] px-3 py-1 rounded-full text-xs uppercase tracking-wider">
                 Category: {selectedImage.category}
               </span>
             </div>
