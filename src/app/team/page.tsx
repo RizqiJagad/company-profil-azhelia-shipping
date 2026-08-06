@@ -73,7 +73,7 @@ export default function TeamPage() {
       role: 'Crewing Officer',
       name: 'Rahayu, S.Tr.Tra',
       description: 'Responsible for crew scheduling, documentation, travel arrangements, and personnel administration.',
-      whatsapp: [{ label: '+62 822-9070-6445', url: 'https://wa.me/6282290706445' }],
+      whatsapp: [{ label: '+62 895-1325-0873', url: 'https://wa.me/6289513250873' }],
     },
   ];
 
