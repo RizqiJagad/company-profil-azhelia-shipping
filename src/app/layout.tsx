@@ -6,8 +6,13 @@ import { Footer } from '@/components/layout/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://azheliashipping.com'),
   title: {
-    default: 'AZHELIA SHIPPING - Maritime Recruitment & Crew Management',
-    template: '%s | AZHELIA SHIPPING',
+    default: 'Azhelia Shipping - Maritime Crew Excellence',
+    template: '%s | Azhelia Shipping - Maritime Crew Excellence',
+  },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
   description:
     'Professional maritime recruitment and crew management company connecting skilled seafarers with international shipowners.',
