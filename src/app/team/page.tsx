@@ -23,7 +23,7 @@ export default function TeamPage() {
 
   const leadershipMembers = [
     {
-      role: 'Managing Director',
+      role: 'Founder and Managing Director',
       name: 'Andhyka Payoh, A.Md., ATT II',
       description: "Leads the company's vision, strategic planning, business development, and overall operations.",
       whatsapp: [
